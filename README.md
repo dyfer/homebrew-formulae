@@ -1,7 +1,7 @@
 Homebrew formulae
 -------------------------------
 
-This repository contains miscellaneous [homebrew](https://brew.sh/) formulae. Install with `dyfer/formulae/<formula-name>`.
+This repository contains miscellaneous [homebrew](https://brew.sh/) formulae. Install with `brew install dyfer/formulae/<formula-name>`.
 
 Incomplete list of formulae:
 - Qt (various versions)
