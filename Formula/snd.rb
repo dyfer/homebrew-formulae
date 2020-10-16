@@ -4,11 +4,13 @@ class Snd < Formula
   url "https://ccrma.stanford.edu/software/snd/snd-20.7.tar.gz"
   sha256 "92376d582389f9bd6e3e49244fff7d146146afe324dcf1502596a29fa710a4cd"
 
-  # depends_on :x11
+  depends_on :x11
   depends_on "pkg-config" => :build
   depends_on "portaudio"
   depends_on "openmotif"
   depends_on "fftw"
+  depends_on "ruby" => OS.mac? ? :optional : :recommended
+  depends_on "libxpm" => OS.mac? ? :optional : :recommended
 
   def install
     system "ruby tools/make-config-pc.rb > ./ruby.pc"
